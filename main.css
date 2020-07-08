@@ -1,0 +1,339 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300;1,400&display=swap');
+@import url(https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css);
+
+*, *::before, *::after {
+	box-sizing: inherit;
+}
+
+html {
+	box-sizing: border-box;
+}
+
+p {
+	margin: 0;
+}
+
+p {
+	margin-bottom: 0.85em;
+}
+
+body {
+  background: #fff;
+  color: #555;
+  font-size: 16px;
+  min-width: 300px;
+  font-family: 'Lato', sans-serif;
+  font: 13px sans-serif;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  line-height: 40px;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+}
+
+header {
+  text-align: left;
+  background: #5c1104;
+  border-bottom: 1px solid #e6e6e6;
+  display: block;
+}
+
+
+header nav, #hero div, #info div, #projects, footer {
+  margin: 0 auto;
+  max-width: 1700px;
+}
+
+
+/* Navigation */
+nav section {
+  display: flex;
+}
+
+
+header #home {
+  border-bottom: none;
+  color: #555;
+  float: left;
+  display: block;
+  font-size: 30px;
+  font-weight: 500;
+}
+
+header #home, header li a {
+  padding: 50px 20px 20px;
+  color: #555;
+  display: block;
+}
+
+header a {
+  text-decoration: none;
+}
+
+header #home span {
+  font-weight: 200;
+}
+
+ul {
+  padding: 0;
+  border: 0;
+  font: inherit;
+}
+
+header ul {
+  float: right;
+  padding-bottom: 0;
+}
+
+nav li, nav ul {
+  margin: 0;
+  list-style: none;
+  list-style-image: none;
+}
+
+dl, ol, p, ul {
+  font-size: 16px;
+  line-height: 40px;
+}
+
+li{
+  padding: 0;
+  border: 0;
+  font: inherit;
+}
+
+
+header li {
+  display: block;
+  float: left;
+  text-align: center;
+  width: auto;
+}
+
+nav li, nav ul {
+  margin: 0;
+  list-style: none;
+  list-style-image: none;
+}
+
+header #home, header li a {
+  padding: 50px 20px 20px;
+  border-bottom: none;
+  color: #fff;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}
+
+nav a:hover {
+	color: royalblue;
+}
+
+nav #home:hover {
+	color: royalblue;	
+}
+
+header li:last-child a {
+  border: none;
+}
+
+
+.clearfix::after, dl::after, footer::after, nav::after, section::after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: '';
+  clear: both;
+  height: 0;
+}
+
+
+.intro h2 {
+	text-align: center;
+	font-size: 30px;
+}
+
+
+/*Footer*/
+.site_footer {
+	text-align: center;
+	border: 2px solid black;
+}
+
+
+
+/*About Us*/
+.about {
+	padding-top: 40px;
+	display: flex;
+	flex-direction: column;
+}
+
+
+.bio img {
+	border-radius: 50%;
+	padding-right: 20px;
+}
+
+.bio h1 {
+	font-size: 40px;
+}
+
+.bio p {
+	color: #000000;
+	padding: 1em 1em;
+}
+
+
+/*Testimonials*/
+#testimonials div {
+	min-height: 740px;
+	margin: 0 auto;
+    border: 0;
+	max-width: 1300px;
+	padding: 3em 1em;
+}
+
+.link {
+	font-size: 25px
+}
+
+
+/*gallery*/
+.container {
+	background-color: #333;
+	border: 10px solid black;
+}
+.row {
+	margin: 15px;
+  }
+
+
+/*FAQ*/
+.faq img {
+	align-items: center;
+}
+
+.faq h1 {
+	text-align: center;
+}
+
+.faq ol {
+	text-align: center;
+	padding: 3em 1em;
+}
+
+
+/*Venue Pricing*/
+
+/*Pricing Table*/
+.pricing-table {
+border: 5px solid black;
+}
+
+/*Individual Tables*/
+.card {
+	background-color: rgb(61, 28, 28);
+	color: blanchedalmond;
+	text-align: center;
+}
+
+.card img {
+	margin: auto;
+}
+
+.card2 {
+	text-align: center;
+	background-color: teal;
+	color: white;
+	border: 2px solid #000000;
+}
+
+.card2 img {
+	margin: auto;
+}
+
+.card3 {
+	text-align: center;
+	background-color: blueviolet;
+	color: whitesmoke;
+	border: 2px solid #000000;
+}
+
+.card3 img {
+	margin: auto;
+}
+
+
+
+/*Contact Us*/
+.contact-form {
+	width: 80%;
+	max-width: 500px;
+	background: #f1f1f1;
+	margin: auto;
+	top: 70%;
+	left: 26%;
+	padding: 30px 40px;
+	box-sizing: border-box;
+	border-radius: 8px;
+	text-align: center;
+	box-shadow: 0 0 20px #000000b3;
+	font-family: "Montserrat", sans-serif;
+	
+}
+
+.contact-form h1{
+	margin-top: 0;
+	font-weight: 200;
+}
+
+.txtb {
+	border: 1px solid gray;
+	margin: 8px 0;
+	padding: 12px 18px;
+	border-radius: 8px;
+}
+
+.txtb label {
+	display: block;
+	text-align: left;
+	color: #333;
+	text-transform: uppercase;
+	font-size: 14px;
+}
+
+.txtb input, .txtb textarea {
+	width: 100%;
+	border: none;
+	background: none;
+	outline: none;
+	font-size: 18px;
+	margin-top: 6px
+}
+
+.btn2 {
+	display: inline-block;
+	background: #5c1104;
+	padding: 14px 0;
+	color: white;
+	text-transform: uppercase;
+	cursor: pointer;
+	margin-top: 8px;
+	width: 100%
+}
+
+@media (max-width: 767px) {
+	body {
+		height: 30vh;
+	}
+
+}

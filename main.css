@@ -45,11 +45,6 @@ header {
 }
 
 
-header nav, #hero div, #info div, #projects, footer {
-  margin: 0 auto;
-  max-width: 1700px;
-}
-
 
 /* Navigation */
 nav section {
@@ -59,7 +54,6 @@ nav section {
 
 header #home {
   border-bottom: none;
-  color: #555;
   float: left;
   display: block;
   font-size: 30px;
@@ -68,7 +62,6 @@ header #home {
 
 header #home, header li a {
   padding: 50px 20px 20px;
-  color: #555;
   display: block;
 }
 
@@ -95,17 +88,6 @@ nav li, nav ul {
   margin: 0;
   list-style: none;
   list-style-image: none;
-}
-
-dl, ol, p, ul {
-  font-size: 16px;
-  line-height: 40px;
-}
-
-li{
-  padding: 0;
-  border: 0;
-  font: inherit;
 }
 
 
@@ -135,14 +117,11 @@ a {
 
 nav a:hover {
 	color: royalblue;
+	text-decoration: none;
 }
 
 nav #home:hover {
 	color: royalblue;	
-}
-
-header li:last-child a {
-  border: none;
 }
 
 
@@ -162,11 +141,6 @@ header li:last-child a {
 }
 
 
-/*Footer*/
-.site_footer {
-	text-align: center;
-	border: 2px solid black;
-}
 
 
 
@@ -193,6 +167,10 @@ header li:last-child a {
 }
 
 
+
+
+
+
 /*Testimonials*/
 #testimonials div {
 	min-height: 740px;
@@ -207,19 +185,28 @@ header li:last-child a {
 }
 
 
+
+
+
+
+
 /*gallery*/
 .container {
-	background-color: #333;
-	border: 10px solid black;
+	background-color:  slategrey;
+	border: 2px solid black;
 }
 .row {
 	margin: 15px;
   }
 
 
+
+
+
 /*FAQ*/
 .faq img {
-	align-items: center;
+	display: block;
+    margin: 0 auto;
 }
 
 .faq h1 {
@@ -232,45 +219,49 @@ header li:last-child a {
 }
 
 
+
+
 /*Venue Pricing*/
 
-/*Pricing Table*/
-.pricing-table {
-border: 5px solid black;
+.pricing-grid {
+	margin-top: 20px;
+	margin-right: 25px;
+	margin-left: 25px;
+	display: grid;
+	grid-template-columns: 20fr 20fr 14fr;
+	grid-template-rows: auto;
+	grid-gap: 1.5em;
 }
 
-/*Individual Tables*/
+
 .card {
-	background-color: rgb(61, 28, 28);
+	background-color: slategrey;
 	color: blanchedalmond;
+	max-width: 100%;
 	text-align: center;
+	
+}
+
+.card p {
+	font-size: 20px;
+	padding-bottom: 20px;
+}
+
+.type {
+	padding-bottom: 40px;
+	font-size: 40px;
 }
 
 .card img {
-	margin: auto;
+	margin: 0 auto;
+	vertical-align: baseline;
 }
 
-.card2 {
-	text-align: center;
-	background-color: teal;
-	color: white;
-	border: 2px solid #000000;
-}
-
-.card2 img {
-	margin: auto;
-}
-
-.card3 {
-	text-align: center;
-	background-color: blueviolet;
-	color: whitesmoke;
-	border: 2px solid #000000;
-}
-
-.card3 img {
-	margin: auto;
-}
+@media screen and (max-width: 768px) {
+	.pricing-grid {
+		grid-template-columns: 1fr;
+	  }
+	}
 
 
 
@@ -288,6 +279,7 @@ border: 5px solid black;
 	text-align: center;
 	box-shadow: 0 0 20px #000000b3;
 	font-family: "Montserrat", sans-serif;
+	margin-top: 50px;
 	
 }
 
@@ -328,10 +320,22 @@ border: 5px solid black;
 	text-transform: uppercase;
 	cursor: pointer;
 	margin-top: 8px;
-	width: 100%
+	width: 100%;
+	padding-bottom: 5px;
 }
 
-@media (max-width: 767px) {
+#site_footer p {
+	margin-top: 5px;
+	padding-top: 5px;
+	font-size: 18px;
+}
+
+
+
+
+
+
+@media (max-width: 768px) {
 	body {
 		height: 30vh;
 	}
